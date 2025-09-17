@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto CORE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Botón hamburguesa -->
+  <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <nav>
+      <ul>
+        <li><a href="#autos">Los AUTOS</a></li>
+        <li><a href="#autoestima">Autoestima</a></li>
+        <li><a href="#tablero">Tablero Interactivo</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="main-content">
+    <!-- Título principal -->
+    <header class="page-title">
+      <h1>Proyecto CORE</h1>
+    </header>
+
+    <!-- Carrusel -->
+    <section class="carrusel">
+      <div class="slides">
+        <div class="slide active">
+          <img src="https://picsum.photos/1200/500?1" alt="Imagen 1">
+          <p class="frase">"El conocimiento es poder cuando se comparte"</p>
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/1200/500?2" alt="Imagen 2">
+          <p class="frase">"CORE: aprender, reflexionar y crecer"</p>
+        </div>
+        <div class="slide">
+          <img src="https://picsum.photos/1200/500?3" alt="Imagen 3">
+          <p class="frase">"Correr para vivir, vivir para aprender"</p>
+        </div>
+      </div>
+    </section>
+  <!-- Texto introductorio -->
+  <section class="intro">
+    <h2>Bienvenido a Proyecto CORE</h2>
+    <p>
+      Esta página está diseñada para relacionar los conceptos trabajados en clase con el libro
+      <em>Correr para Vivir</em>, mostrando reflexiones, análisis y un espacio interactivo en el que
+      todos pueden participar. La idea es que integremos los conceptos que se revisan en core 1 , los recordemos
+      si fuimos participantes alguna vez de core , o los conozcamos, si futuramente vamos a cursar core 1.
+    </p>
+  </section>
+
+  <main>
+    <!-- Sección 1: Los AUTOS -->
+    <section id="autos">
+      <h2>Los AUTOS en "Correr para Vivir"</h2>
+      <p>Relación de los diferentes autos vistos en clase y aplicados al libro "Correr para Vivir".</p>
+      <div class="contenido">
+        <h3>AUTOconocimiento</h3>
+        <p><strong>Escena:</strong> Cuando Lomong recuerda su infancia en Sudán, el secuestro en la iglesia y cómo correr en el campo de refugiados lo hacía sentir libre.</p>
+        <p><strong>Explicación:</strong> Identifica emociones, reconoce que correr no es solo actividad física, sino un propósito.</p>
+      </div>
+      <div class="contenido">
+        <h3>AUTOconcepto</h3>
+        <p><strong>Escena:</strong> "Correr era mi escape, mi refugio y mi futuro".</p>
+        <p><strong>Explicación:</strong> Se describe a sí mismo como sobreviviente y corredor con destino definido.</p>
+      </div>
+      <div class="contenido">
+        <h3>AUTOevaluación</h3>
+        <p><strong>Escena:</strong> Durante los entrenamientos en EE.UU., compara su rendimiento y reconoce que debía mejorar.</p>
+        <p><strong>Explicación:</strong> Reflexiona sobre fortalezas y debilidades para ajustarse a un plan de trabajo.</p>
+      </div>
+      <div class="contenido">
+        <h3>AUTOrespeto</h3>
+        <p><strong>Escena:</strong> Representa a EE.UU. con orgullo sin renunciar a su fe ni a sus raíces.</p>
+        <p><strong>Explicación:</strong> Se respeta manteniéndose fiel a valores y principios.</p>
+      </div>
+      <div class="contenido">
+        <h3>AUTOcontrol</h3>
+        <p><strong>Escena:</strong> En el secuestro y huida demostró dominio emocional.</p>
+        <p><strong>Explicación:</strong> Muestra disciplina para no rendirse.</p>
+      </div>
+      <div class="imagen">
+        <p><em>Espacio para imágenes relacionadas...</em></p>
+      </div>
+    </section>
+
+    <!-- Sección 2: Autoestima -->
+    <section id="autoestima">
+      <h2>Autoestima de López Lomong</h2>
+      <p>Analizamos cómo se refleja la autoestima en la historia del protagonista.</p>
+      <h3>Tipo de Autoestima: Alta</h3>
+      <ul>
+        <li><strong>Competencia:</strong> Desarrolló disciplina y perseverancia para sobresalir en atletismo.</li>
+        <li><strong>Merecimiento:</strong> Aprovechó oportunidades y trabajó duro para una vida mejor.</li>
+        <li><strong>Virtud:</strong> Generosidad, compartió logros para motivar a otros.</li>
+      </ul>
+      <h3>Orientaciones para fortalecer autoestima:</h3>
+      <ol>
+        <li>Mantener disciplina y constancia.</li>
+        <li>Practicar gratitud.</li>
+        <li>Compartir con otros sus talentos.</li>
+      </ol>
+      <div class="imagen">
+        <p><em>Espacio para imágenes relacionadas...</em></p>
+      </div>
+    </section>
+
+    <!-- Tablero interactivo -->
+    <section id="tablero">
+      <h2>Tablero Virtual Interactivo</h2>
+      <p>Añade tus notas o frases directamente en el tablero de Padlet:</p>
+      <div class="padlet-container">
+        <iframe src="https://padlet.com/samuelfrojas24/proyecto-core-tablero-gxev77kbxb17k4cb" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <img src="usb.png" alt="Logo Universidad" class="footer-logo">
+    <span>Universidad de la Sabana</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

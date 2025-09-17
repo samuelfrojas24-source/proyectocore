@@ -1,0 +1,196 @@
+/* Reset básico */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f3f3f3;
+  color: #333;
+}
+
+/* Botón menú */
+.menu-toggle {
+  font-size: 28px;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  color: #003366;
+  background: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+  z-index: 1100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+
+.sidebar {
+  width: 300px; /* Más ancha */
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -300px; /* Oculta inicialmente */
+  background: rgba(0, 51, 102, 0.9); /* Azul oscuro semi-transparente */
+  backdrop-filter: blur(6px); /* Difuminado de fondo */
+  color: white;
+  transition: 0.3s ease-in-out;
+  padding-top: 60px;
+  z-index: 1000;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4); /* Efecto de sombra */
+}
+
+.sidebar.active {
+  left: 0; /* Se despliega */
+}
+
+.sidebar a {
+  display: block;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 0;
+  padding: 20px;
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+  color: #ff7e5f;
+  margin: 0;
+}
+
+/* Carrusel */
+.carrusel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.slides {
+  display: flex;
+  animation: slide 12s infinite;
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;   /* antes era automático, ahora limitamos */
+  object-fit: cover; /* recorta para que no se deforme */
+  border-radius: 12px;
+}
+.frase {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1.2em;
+}
+
+/* Animación carrusel */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  30% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  63% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  96% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+/* Intro */
+.intro {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Secciones */
+section {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #ff7e5f;
+}
+
+.contenido {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-left: 5px solid #feb47b;
+  background: #fff8f2;
+}
+
+.imagen {
+  margin-top: 15px;
+  padding: 10px;
+  border: 2px dashed #ccc;
+  text-align: center;
+}
+
+/* Padlet */
+.padlet-container iframe {
+  width: 100%;
+  height: 600px;
+  border-radius: 12px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: #004080;
+  color: white;
+  padding: 10px;
+  height: 60px; /* ~2 cm */
+  position: relative;
+  margin-top: 50px;
+}
+
+.footer-logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+/* Centrar textos con margen lateral */
+p, .intro, .contenido, section, ul, ol {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px; /* evita que se vea muy ancho */
+}
